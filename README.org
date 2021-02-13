@@ -1,6 +1,4 @@
-#+TITLE: Vaitea Opuu
 #+DATE: 2021-02-13
-#+AUTHOR: Vaitea Opuu
 #+EMAIL: vaiteaopuu@gmail.com
 #+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
 #+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
@@ -11,5 +9,3 @@
 #+KEYWORDS:
 #+LANGUAGE: en
 #+SELECT_TAGS: exportd
-#+HTML_LINK_UP: index.html
-
