@@ -1,1 +1,5 @@
-theme: jekyll-theme-cayman
+title: Personal webpage
+description: Minimal hello world page
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-minimal

@@ -13,7 +13,3 @@
 #+SELECT_TAGS: exportd
 #+HTML_LINK_UP: index.html
 
-* Hello world
-test
-
-TEST2
