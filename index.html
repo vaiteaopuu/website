@@ -2,59 +2,88 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Vaitea Opuu, Ph.D</title>
+        <title>Vaitea Opuu</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
     <body>
 
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Vaitea Opuu</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><strong>Bio-polymer designs</strong></a>
         </nav>
         
         <div class="container-fluid">
             <div class="row">
-                <nav class="navbar-nav px-3">
-                    <div class="sidebar-sticky">
-                        <ul class="nav flex-column">
-                            <li class="nav-item"> <a class="nav-link" href="#research_int"><h5>Reserach interests</h5></a> </li>
-                            <li class="nav-item"> <a class="nav-link" href="#publications"><h5>Publications</h5></a> </li>
-                            <li class="nav-item"> <a class="nav-link" href="#others"><h5>Others</h5></a> </li>
+                <nav class="navbar-nav px-3 bg-dark">
+                    <div class="sidebar-sticky bg-dark">
+                        <ul class="nav flex-column bg-dark">
+                            <br/>
+                            <li class="nav-item"> <a class="nav-link" href="#research_int" style="color: #ffffff"><h5><strong>Reserach interests</strong></h5></a> </li>
+                            <br/>
+                            <li class="nav-item"> <a class="nav-link" href="#publications" style="color: #ffffff"><h5><strong>Publications</strong></h5></a> </li>
+                            <!-- <li class="nav-item"> <a class="nav-link" href="#others"><h5>Others</h5></a> </li> -->
                         </ul>
                     </div>
                 </nav>
 
                 <div class="container">
 
-                    <h1><strong>Vaitea Opuu</strong></h1>
+                    <h1><strong>Vaitea Opuu, Ph.D</strong></h1>
+                    <img src="img/vopuu.png" alt="Avatar" style="max-width: 20%;border-radius: 100%"/>
 
-                    Inselstraße 22 04103 Leipzig Germany<br/>
-                    vopuu@mis.mpg.de <br/> <br/> <br/>
+                    <br/><br/>
+                    <strong><strong>  </strong> Inselstraße 22 04103 Leipzig Germany</strong><br/>
+                    <strong><strong>  </strong> vopuu@mis.mpg.de </strong><br/> <br/> <br/>
 
                     <p>
-                        Hi! I'm a Postdoc in the group Structure of evolution, at the Max Planck
-                        Institute for Mathematics in Sciences (Leipzig, Germany). I currently work on
-                        computational method to design RNA molecules. Those methods rely on statistical
-                        physics, neural-network, or dynamic programming.
+                        Hi! I'm a Postdoc in the group <a href="https://www.mis.mpg.de/strevol/index.html">Structure of evolution</a>,
+                        at <a href="https://www.mis.mpg.de">the Max Planck
+                        Institute for Mathematics in Sciences</a> (Leipzig, Germany),
+                        since december 2020. I currently work on computational
+                        method to design RNA molecules. Those methods rely on
+                        statistical physics, neural-network, or dynamic
+                        programming.
                     </p>
 
                     <p>
-                        After a Master in Bioinformatics at Paris-Saclay university (2015-2017),
-                        I started a PhD in biology at Ecole Polytechnique (Institut Polytechnique de
-                        Paris). From 2017 to 2020, I worked on computational protein
-                        design under the supervision of Pr. Thomas Simonson in the
-                        laboratory Structural Biology of the Cell. I defended my PhD
-                        the 29th of October 2020.
+                        After a Master in Bioinformatics at Paris-Saclay University (2015-2017),
+                        I started a PhD in Biology at Ecole Polytechnique (<a href="https://www.ip-paris.fr/en">Institut
+                        Polytechnique de Paris</a>). From 2017 to 2020, I worked
+                        on computational protein design under the supervision of
+                        Pr. Thomas Simonson in <a href="https://portail.polytechnique.edu/bioc/en/presentation/presentation">the Structural Biology of the
+                        Cell</a> laboratory. I defended my PhD on the 29th of
+                        October 2020.
                     </p>
 
                     <section id="research_int">
                         <h2>Research interests</h2>
-                        My main research interests are:
 
-                        <ul>
-                            <li>Design of bio-polymers (RNA, DNA, Proteins) using their
-                                bio-physical-chemical properties.</li>
-                            <li>Design methods/algorithm to study those bio-polymers</li>
-                        </ul>
+                        <p>
+                            I'm interested in bio-polymers such as proteins,
+                            DNAs, or RNAs. Most of the works I contributed to
+                            were efforts toward the design of biologically
+                            relevant proteins. Using molecular mechanics,
+                            continuum electrostatics, Monte Carlo simulations,
+                            and molecular dynamic simulations we aimed at
+                            understanding the subtile mutationnal interplays.
+                            Such works allow the detailed understanding of
+                            mutational impact on catalysis, even when
+                            considering multiple reactions.
+                        </p>
+                        <img src="./img/free_nrj_comb.png" alt="Catalysis" style="max-width: 50%;"/>
+
+                        <p>
+                            In a completely different aspect of bio-polymer
+                            design, I worked on the first algorithm for the
+                            design of overlapping genes. Basically, the
+                            algorithm designs one single DNA molecule in which
+                            at least two genes are encoded and both genes are
+                            overlappings. These genes may encode for completely
+                            different proteins. This uses a dynamic programming
+                            scheme similar to the sequence alignment one.
+                        </p>
+
+                        <img src="./img/overlapping_reading_frames.webp" alt="Overlapping frames" style="max-width: 40%;"/>
+                        <img src="./img/design_6_clean.png" alt="All overlapping frames" style="max-width: 40%;"/>
 
                     </section>
 
@@ -66,7 +95,7 @@
                                     <td>
                                         <span class="badge badge-primary">Journal</span>
                                         <b>Adaptive Landscape Flattening Allows the Design of Both Enzyme: Substrate Binding and Catalytic Power </b><br>
-                                        <b>Plos Computational Biology</b>, 2020 <br>
+                                        <i><b>Plos Computational Biology</b>, 2020,</i> <a href="https://doi.org/10.1371/journal.pcbi.1007600">doi</a> <br>
                                         Vaitea Opuu, Giuliano Nigro, Thomas Gaillard, Emmanuelle Schmitt, Yves Mechulam, Thomas Simonson <br>
                                     </td>
                                 </tr>
@@ -75,7 +104,7 @@
                                     <td>
                                         <span class="badge badge-primary">Journal</span>
                                         <b>A Physics-Based Energy Function Allows the Computational Redesign of a Pdz Domain </b><br/>
-                                        <b>Scientific Reports</b>, 2020 <br/>
+                                        <i><b>Scientific Reports</b>, 2020,</i> <a href="https://doi.org/10.1038/s41598-020-67972-w">doi</a> <br/>
                                         Vaitea Opuu*, Young Joo Sun*, Titus Hou, Nicolas Panel, Ernesto J. Fuentes, Thomas Simonson <br/>
                                     </td>
                                 </tr>
@@ -85,7 +114,7 @@
                                     <td>
                                         <span class="badge badge-primary">Journal</span>
                                         <b>Proteus software for physics-based protein design </b><br/>
-                                        <b>The Journal of Physical Chemistry Part A</b>, 2020 <br/>
+                                        <i><b>The Journal of Physical Chemistry Part A</b>, 2020,</i> <a href="https://doi.org/10.1021/acs.jpca.0c07605">doi</a> <br/>
                                         Mignon David, Druart Karen*, Michael Eleni*, Vaitea  Opuu*, Polydorides Savvas*, Villa Francesco*, Gaillard Thomas, Panel Nicolas, Archontis Georgios, Simonson Thomas <br/>
                                     </td>
                                 </tr>
@@ -94,7 +123,7 @@
                                     <td>
                                         <span class="badge badge-primary">Journal</span>
                                         <b>Computational Design of Fully Overlapping Coding Schemes for Protein Pairs and Triplets </b><br/>
-                                        <b>Scientific Reports</b>, 2017 <br/>
+                                        <i><b>Scientific Reports</b>, 2017</i>, <a href="https://doi.org/10.1038/s41598-017-16221-8">doi</a> <br/>
                                         Vaitea Opuu, Martin Silvert, Thomas Simonson <br/>
                                     </td>
                                 </tr>
@@ -103,8 +132,8 @@
                                     <td>
                                         <span class="badge badge-primary">Journal</span>
                                         <b>Meet-U: educating through research immersion </b><br/>
-                                        <b>Plos Computational Biology</b>, 2018 <br/>
-                                        Abdollahi Nika, ... <br/>
+                                        <i><b>Plos Computational Biology</b>, 2018</i>, <a href="https://doi.org/10.1371/journal.pcbi.1005992">doi</a> <br/>
+                                        Abdollahi Nika, Albani Alexandre, Anthony Eric, Baud Agnes, Cardon M{\'e}lissa, Clerc Robert, Czernecki Dariusz, Conte Romain, David Laurent, Delaune Agathe, <i>et al</i><br/>
                                     </td>
                                 </tr>
 
@@ -130,10 +159,10 @@
                         </table>
                     </section>
 
-                    <section id="others">
-                        <h2>Others</h2>
+                    <!-- <section id="others">
+                         <h2>Others</h2>
 
-                    </section>
+                         </section> -->
                 </div>
             </div>
         </div>
