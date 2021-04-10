@@ -1,0 +1,50 @@
+\begin{thebibliography}{1}
+
+\bibitem{abdollahi2018meet}
+Nika Abdollahi, Alexandre Albani, Eric Anthony, Agnes Baud, M{\'e}lissa Cardon,
+  Robert Clerc, Dariusz Czernecki, Romain Conte, Laurent David, Agathe Delaune,
+  et~al.
+\newblock Meet-u: educating through research immersion.
+\newblock {\em PLoS computational biology}, 14(3), 2018.
+
+\bibitem{mignon2020proteus}
+David Mignon, Karen Druart, Eleni Michael, \underline{Vaitea Opuu}, Savvas
+  Polydorides, Francesco Villa, Thomas Gaillard, Nicolas Panel, Georgios
+  Archontis, and Thomas Simonson.
+\newblock Proteus software for physics-based protein design.
+\newblock {\em The Journal of Physical Chemistry Part A}, 2021, accepted.
+
+\bibitem{book_nico}
+Nicolas Panel, \underline{Vaitea Opuu}, Francesco Villa, David Mignon, and
+  Thomas Simonson.
+\newblock {\em in Methods in Molecular Biology: PDZ domains}.
+\newblock JP Borg. Springer Verlag, New York, 2020.
+
+\bibitem{opuu20_adapt_lands_flatt_allow_desig_both_enzym}
+\underline{Vaitea Opuu}, Giuliano Nigro, Thomas Gaillard, Emmanuelle Schmitt,
+  Yves Mechulam, and Thomas Simonson.
+\newblock Adaptive landscape flattening allows the design of both enzyme:
+  Substrate binding and catalytic power.
+\newblock {\em PLOS Computational Biology}, 16(1):e1007600, 2020.
+
+\bibitem{opuu17_comput_desig_fully_overl_codin}
+\underline{Vaitea Opuu}, Martin Silvert, and Thomas Simonson.
+\newblock Computational design of fully overlapping coding schemes for protein
+  pairs and triplets.
+\newblock {\em Scientific Reports}, 7(1):15873, 2017.
+
+\bibitem{assb_og}
+\underline{Vaitea Opuu}, Martin Silvert, and Thomas Simonson.
+\newblock Computational design of fully overlapping coding schemes for portein
+  pairs and triplets.
+\newblock {\em (proceeding of) advances in systems and synthetic biology},
+  page~97, 2018.
+
+\bibitem{opuu2019physics}
+\underline{Vaitea Opuu}*, Young~Joo Sun*, Titus Hou, Nicolas Panel, Ernesto~J.
+  Fuentes, and Thomas Simonson.
+\newblock A physics-based energy function allows the computational redesign of
+  a pdz domain.
+\newblock {\em Scientific Reports}, 10(1):11150, 2020.
+
+\end{thebibliography}

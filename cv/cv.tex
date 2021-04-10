@@ -1,0 +1,140 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{array, xcolor, lipsum}
+\RequirePackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+
+
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+%% \title{\bfseries Vaitea OPUU}
+%% \author{vaitea.opuu@polytechnique.edu \\ 08/07/1992}
+%% \date{}
+%% \par\noindent\rule{\textwidth}{0.4pt}
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\begin{document}
+\begin{flushright}
+\textbf{Vaitea Opuu}\\ % Your name
+15 Rue Paul Fort Paris, 75014 France\\ % Your address and phone number
+07/08/1992, Tahiti, French Polynesia\\
+vaitea.opuu@polytechnique.edu\\
+\end{flushright}
+\hrule height 1pt % If you would like a horizontal line separating
+
+\pagenumbering{gobble}
+
+\section*{Education}
+\hrule height 0.5pt \\% If you would like a horizontal line separating
+\vspace{5pt}
+\begin{tabular}{L!{\VRule}R}
+  Oct 2017 / &{\bf PhD} in {\bf Computational Protein Design}, École Polytechnique, France\\
+  Oct 2020   & Thesis title: {\bf Computational design of proteins en enzymes}\\
+             & Advisor {\bf Thomas Simonson}\\
+             & Defense date: {\bf 29 October 2020}\\
+             & \textit{Molecular Mechanics, Molecular Dynamics, Biased Sampling, Monte Carlo Algorithms, Dynamic programming, Sequence Analysis}\\[10pt]
+  \\
+  Sept 2015 / &{\bf Master} in {\bf Bioinformatics}, Université Paris Saclay, France\\
+  Sept 2017   & \textit{Biostatistics, Machine learning, Sequence Analysis, Graph Theory, String Algorithms}
+\end{tabular}
+\vspace{20pt}
+
+\bibliographystyle{plain}
+\nobibliography{publication}
+
+\section*{Publication list}
+\hrule height 0.5pt \\% If you would like a horizontal line separating
+\vspace{5pt}
+\begin{tabular}{L!{\VRule}R}
+  2020&\bibentry{opuu2019physics}\\ &(* co-first authors)\\[10pt]
+  2020&\bibentry{opuu20_adapt_lands_flatt_allow_desig_both_enzym}\\[10pt] \\
+  2020&\bibentry{mignon2020proteus}\\[10pt] \\
+  2020&\bibentry{book_nico}\\ &(book chapter)\\[10pt] \\
+  2017&\bibentry{opuu17_comput_desig_fully_overl_codin}\\
+\end{tabular}
+\vspace{20pt}
+
+\section*{Other scientific contributions}
+\hrule height 0.5pt \\% If you would like a horizontal line separating
+\vspace{5pt}
+\begin{tabular}{L!{\VRule}R}
+  2018&\bibentry{abdollahi2018meet}\\[10pt] \\
+  2018&\bibentry{assb_og}\\
+\end{tabular}
+
+
+\clearpage
+\section*{Oral presentations}
+\hrule height 0.5pt \\% If you would like a horizontal line separating
+\vspace{5pt}
+ \begin{tabular}{L!{\VRule}R}
+  2019&MASIM workshop, Paris, France\\[5pt]
+  2019&$3^{rd}$ Junior Conference on Computational Biology, Orsay, France\\[5pt]
+  2019&AMMIB workshop, Gif-sur-yvette, France\\[5pt]
+  2019&Seminar at Université Paris-Diderot, Paris, France\\[5pt]
+  2018&$17^{th}$ advances in Systems and Synthetic Biology, Every, France\\
+\end{tabular}
+\vspace{20pt}
+
+\section*{Computer skills}
+\hrule height 0.5pt \\% If you would like a horizontal line separating
+\vspace{5pt}
+ \begin{tabular}{L!{\VRule}R}
+   Compiled lang.     & C, Java, fortran\\
+   Scripting lang.    & Python, Perl, sh (bash,csh,awk...), R, Matlab, Haskell, Elisp\\
+   Markup lang.       & Html, Org mode, \LaTeX\\
+\end{tabular}
+\vspace{20pt}
+
+\section*{Contributions to software developments}
+\hrule height 0.5pt \\% If you would like a horizontal line separating
+\vspace{5pt}
+\begin{tabular}{L!{\VRule}R}
+  Proteus&\url{https://proteus.polytechnique.fr}\\[5pt]
+\end{tabular}
+\vspace{20pt}
+
+\section*{References}
+\hrule height 0.5pt \\% If you would like a horizontal line separating
+\vspace{5pt}
+\centering
+\begin{tabular}{c}
+{\bf Pr Thomas Simonson}\\
+(PhD Advisor)\\
+Director, Structural Biology of the Cell Laboratory\\
+École Polytechnique, Palaiseau, France\\
+\url{thomas.simonson@polytechnique.edu}\\[10pt]
+%% \vspace{10pt}
+
+{\bf Pr Georgios Archontis}\\
+(Computational collaborator)\\
+Associate Professor in Theoretical and Computational Biophysics\\
+Department of physics, University of Cyprus, Cyprus\\
+\url{archonti@ucy.ac.cy}\\[10pt]
+
+{\bf Pr Yves Mechulam}\\
+(Experimental collaborator)\\
+Associate Professor Structural Biology of the Cell Laboratory\\
+École Polytechnique, Palaiseau, France\\
+\url{yves.mechulam@polytechnique.edu}
+\end{tabular}
+
+
+%% {\bf Pr Anne-Claude Camproux}\\
+%% (PhD jury reviewer)\\
+%% Professeur Bioinformatique-Biostatistique\\
+%% Université Paris Diderot, Paris, France\\
+%% \url{anne-claude.camproux@univ-paris-diderot.fr}
+%% \vspace{10pt}
+
+%% {\bf Dr Marc Delarue}\\
+%% (PhD jury reviewer)\\
+%% Directeur de recherche CNRS\\
+%% Institut Pasteur, Paris, France\\
+%% \url{marc.delarue@pasteur.fr}
+
+\end{document}
