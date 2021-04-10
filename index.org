@@ -39,5 +39,5 @@ Abdollahi Nika, ...
 Panel Nicolas, Vaitea  Opuu, Villa Francesco, Mignon David, Simonson Thomas
 * CV
 # point to the latex document
-[[cv/cv.pdf]]
+[[./cv/cv.pdf]]
 * Others
