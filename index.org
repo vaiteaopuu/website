@@ -1,4 +1,7 @@
 #+email: vaiteaopuu@gmail.com
+#+options: toc:nil author:nil date:nil
+#+html_head: <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 
 # What I do now
 Hi! I'm a Postdoc in the group Structure of evolution, at the Max Planck
