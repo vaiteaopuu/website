@@ -10,4 +10,4 @@
 #+LANGUAGE: en
 #+SELECT_TAGS: exportd
 
-* Personal webpage
+* Personal web-page
