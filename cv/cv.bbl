@@ -12,13 +12,25 @@ David Mignon, Karen Druart, Eleni Michael, \underline{Vaitea Opuu}, Savvas
   Polydorides, Francesco Villa, Thomas Gaillard, Nicolas Panel, Georgios
   Archontis, and Thomas Simonson.
 \newblock Proteus software for physics-based protein design.
-\newblock {\em The Journal of Physical Chemistry Part A}, 2021, accepted.
+\newblock {\em The Journal of Physical Chemistry Part A}, 2021.
 
-\bibitem{book_nico}
-Nicolas Panel, \underline{Vaitea Opuu}, Francesco Villa, David Mignon, and
+\bibitem{panel2021computational}
+Nicolas Panel, Francesco Villa, \underline{Vaitea Opuu}, David Mignon, and
   Thomas Simonson.
-\newblock {\em in methods in Molecular Biology: PDZ domains}.
-\newblock JP Borg. Springer Verlag, New York, 2020.
+\newblock Computational design of pdz-peptide binding.
+\newblock In {\em PDZ Mediated Interactions}, pages 237--255. Springer, 2021.
+
+\bibitem{opuu2021rafft}
+\underline{Vaitea Opuu}, Nono~SC Merleau, and Matteo Smerlak.
+\newblock Rafft: Efficient prediction of rna folding pathways using the fast
+  fourier transform.
+\newblock {\em bioRxiv}, 2021, preprint.
+
+\bibitem{opuu2021uf}
+\underline{Vaitea Opuu}, David Mignon, and Thomas Simonson.
+\newblock Knowledge-based unfolded state model for protein design.
+\newblock In {\em Computational Peptide Science: Methods and Protocols}.
+  Springer, 2021, \textit{in press}.
 
 \bibitem{opuu20_adapt_lands_flatt_allow_desig_both_enzym}
 \underline{Vaitea Opuu}, Giuliano Nigro, Thomas Gaillard, Emmanuelle Schmitt,
