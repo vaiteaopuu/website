@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{abdollahi2018meet}
 Nika Abdollahi, Alexandre Albani, Eric Anthony, Agnes Baud, M{\'e}lissa Cardon,
@@ -7,6 +7,15 @@ Nika Abdollahi, Alexandre Albani, Eric Anthony, Agnes Baud, M{\'e}lissa Cardon,
 \newblock Meet-u: educating through research immersion.
 \newblock {\em PLoS computational biology}, 14(3), 2018.
 
+\bibitem{chen2022}
+Kuang-Yu Chen*, Jayaprakash Karuppusamy*, Mary~B. O’Neill*, Bahin
+  \underline{Vaitea Opuu} and, Mathieu, Sophie Foulon, Ibanez~Pnd ablo, Lluis
+  Quintana-Murci, Tatsuhiko Ozawa, Sylvie van~der Werf, Philippe Nghe, Nadia
+  Naffakh, Andrew Griffiths, and Catherine Isel.
+\newblock High-throughput droplet-based analysis of influenza a virus genetic
+  reassortment by single-virus rna sequencing.
+\newblock 2022, submitted.
+
 \bibitem{mignon2020proteus}
 David Mignon, Karen Druart, Eleni Michael, \underline{Vaitea Opuu}, Savvas
   Polydorides, Francesco Villa, Thomas Gaillard, Nicolas Panel, Georgios
@@ -14,23 +23,42 @@ David Mignon, Karen Druart, Eleni Michael, \underline{Vaitea Opuu}, Savvas
 \newblock Proteus software for physics-based protein design.
 \newblock {\em The Journal of Physical Chemistry Part A}, 2021.
 
+\bibitem{opuu2022beta}
+Giuliano Nigro*, \underline{Vaitea Opuu}*, Christine Lazennec, Yves Mechulam,
+  Emmanuelle Schmitt, and Thomas Simonson.
+\newblock Redesigning methionyl-trna synthetase for β-methionine activity
+  using adaptive monte carlo and experiments.
+\newblock 2022, in preparation.
+
 \bibitem{panel2021computational}
 Nicolas Panel, Francesco Villa, \underline{Vaitea Opuu}, David Mignon, and
   Thomas Simonson.
 \newblock Computational design of pdz-peptide binding.
 \newblock In {\em PDZ Mediated Interactions}, pages 237--255. Springer, 2021.
 
-\bibitem{opuu2021rafft}
+\bibitem{opuu2022neurips}
+\underline{Vaitea Opuu} and Helene Bret.
+\newblock Investigating graph neural network for rna structural embedding.
+\newblock {\em Machine Learning for Structural Biology Workshop, NeurIPS 2022},
+  2022.
+
+\bibitem{opuu2022carnage}
+\underline{Vaitea Opuu} and Helene Bret.
+\newblock \texttt{CARNAGE}: trained rna structure-in-sequence compression with
+  graph neural networks.
+\newblock 2022, in preparation.
+
+\bibitem{opuu2022rafft}
 \underline{Vaitea Opuu}, Nono~SC Merleau, Vincent Messow, and Matteo Smerlak.
 \newblock Rafft: Efficient prediction of rna folding pathways using the fast
   fourier transform.
-\newblock {\em Plos Computational Biology}, 2022, accepted.
+\newblock {\em PLoS computational biology}, 18(8):e1010448, 2022.
 
 \bibitem{opuu2021uf}
 \underline{Vaitea Opuu}, David Mignon, and Thomas Simonson.
 \newblock Knowledge-based unfolded state model for protein design.
 \newblock In {\em Computational Peptide Science: Methods and Protocols}.
-  Springer, 2021, \textit{in press}.
+  Springer, 2021.
 
 \bibitem{opuu20_adapt_lands_flatt_allow_desig_both_enzym}
 \underline{Vaitea Opuu}, Giuliano Nigro, Thomas Gaillard, Emmanuelle Schmitt,

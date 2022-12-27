@@ -10,6 +10,11 @@
     "panel2021computational"
     "assb_og"
     "mignon2020proteus"
-    "opuu2021rafft"))
- :bibtex)
+    "opuu2021rafft"
+    "chen2022"
+    "opuu2022carnage"
+    "opuu2022neurips"
+    "opuu2022beta"
+    "opuu2022rafft"))
+ '(or :bibtex :latex))
 
