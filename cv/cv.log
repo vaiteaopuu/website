@@ -1,24 +1,24 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.2.15)  27 DEC 2022 19:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.12.27)  3 FEB 2023 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **cv.tex
 (./cv.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2021-11-22>
+L3 programming layer <2022-04-10>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -62,19 +62,19 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
 (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-11-22 L3 programming layer (loader) 
+Package: expl3 2022-04-10 L3 programming layer (loader) 
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count191
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count193
 \l__pdf_internal_box=\box52
 ))
-Package: l3keys2e 2021-11-12 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count192
-\l__lipsum_a_int=\count193
-\l__lipsum_b_int=\count194
+\g__lipsum_par_int=\count194
+\l__lipsum_a_int=\count195
+\l__lipsum_b_int=\count196
 
 (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (/usr/share/texmf-dist/tex/latex/natbib/bibentry.sty
@@ -91,11 +91,11 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count195
-\Gm@cntv=\count196
-\c@Gm@tempcnt=\count197
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
 \Gm@bindingoffset=\dimen141
 \Gm@wd@mp=\dimen142
 \Gm@odd@mp=\dimen143
@@ -129,16 +129,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count198
+\scratchcounter=\count266
 \scratchdimen=\dimen149
 \scratchbox=\box53
-\nofMPsegments=\count199
-\nofMParguments=\count266
+\nofMPsegments=\count267
+\nofMParguments=\count268
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count267
+\MPscratchCnt=\count269
 \MPscratchDim=\dimen150
-\MPnumerator=\count268
-\makeMPintoPDFobject=\count269
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
 \everyMPtoPDFconversion=\toks22
 )
 *geometry* driver: auto-detecting
@@ -239,7 +239,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59   2022&\bibentry{opuu2022rafft}\\[1pt]\\
+l.59   2023&\bibentry{chen2022}\\[1pt]\\
+                                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60   2022&\bibentry{opuu2022rafft}\\[1pt]\\
                                              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -252,7 +265,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 ...nds_flatt_allow_desig_both_enzym}\\[1pt]\\
+l.62 ...nds_flatt_allow_desig_both_enzym}\\[1pt]\\
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -265,7 +278,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.62   2020&\bibentry{mignon2020proteus}\\[1pt]\\
+l.63   2020&\bibentry{mignon2020proteus}\\[1pt]\\
                                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -278,7 +291,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.69 \vspace
+l.70 \vspace
             {5pt}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -291,21 +304,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71   2021&\bibentry{opuu2021uf}\\[1pt]\\
+l.72   2021&\bibentry{opuu2021uf}\\[1pt]\\
                                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 \vspace
-            {5pt}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -313,11 +313,6 @@ or  <return>  to continue without it.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 5388) in paragraph at lines 80--80
-[]|\OT1/cmr/m/n/10 Kuang-Yu Chen*, Jayaprakash Karup-pusamy*, Mary B. O'Neill*,
- Bahin
- []
-
 
 ! LaTeX Error: There's no line here to end.
 
@@ -325,8 +320,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80   2022&\bibentry{chen2022}\\[1pt]\\
-                                        
+l.79 \vspace
+            {5pt}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -429,7 +424,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111 \vspace
+l.113 \vspace
              {5pt}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -442,13 +437,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 \vspace
+l.123 \vspace
              {5pt}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[2]
+[2] [3]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -456,14 +451,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 \vspace
+l.133 \vspace
              {5pt}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (21.98227pt too wide) in paragraph at lines 132--141
+Overfull \hbox (21.98227pt too wide) in paragraph at lines 134--143
 []
  []
 
@@ -474,33 +469,33 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.144 \vspace
+l.146 \vspace
              {5pt}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[3
+[4
 
 ] (./cv.aux) ) 
 Here is how much of TeX's memory you used:
- 2603 strings out of 478353
- 43150 string characters out of 5854635
- 451237 words of memory out of 5000000
- 20748 multiletter control sequences out of 15000+600000
- 404857 words of font info for 32 fonts, out of 8000000 for 9000
+ 2632 strings out of 478238
+ 43916 string characters out of 5850455
+ 446533 words of memory out of 5000000
+ 20888 multiletter control sequences out of 15000+600000
+ 470686 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,77p,239b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,11n,77p,239b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
 .pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cv.pdf (3 pages, 117286 bytes).
+Output written on cv.pdf (4 pages, 119364 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

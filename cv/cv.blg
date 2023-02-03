@@ -1,50 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2022/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: cv.aux
 The style file: plain.bst
 Database file #1: publication.bib
-Warning--empty journal in chen2022
 Warning--empty journal in opuu2022beta
 Warning--empty journal in opuu2022carnage
 You've used 13 entries,
             2118 wiz_defined-function locations,
-            565 strings with 7223 characters,
-and the built_in function-call counts, 5275 in all, are:
-= -- 464
-> -- 409
+            566 strings with 7289 characters,
+and the built_in function-call counts, 5307 in all, are:
+= -- 467
+> -- 414
 < -- 2
-+ -- 162
-- -- 148
-* -- 432
-:= -- 945
++ -- 164
+- -- 150
+* -- 436
+:= -- 952
 add.period$ -- 41
 call.type$ -- 13
-change.case$ -- 112
+change.case$ -- 113
 chr.to.int$ -- 0
-cite$ -- 16
+cite$ -- 15
 duplicate$ -- 159
 empty$ -- 301
-format.name$ -- 148
-if$ -- 1031
+format.name$ -- 150
+if$ -- 1037
 int.to.chr$ -- 0
 int.to.str$ -- 13
 missing$ -- 13
 newline$ -- 68
 num.names$ -- 26
-pop$ -- 116
+pop$ -- 115
 preamble$ -- 1
-purify$ -- 99
+purify$ -- 100
 quote$ -- 0
 skip$ -- 108
 stack$ -- 0
 substring$ -- 180
-swap$ -- 24
+swap$ -- 25
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 52
-warning$ -- 3
+warning$ -- 2
 while$ -- 34
 width$ -- 15
-write$ -- 138
-(There were 3 warnings)
+write$ -- 139
+(There were 2 warnings)
