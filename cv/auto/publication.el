@@ -15,6 +15,8 @@
     "opuu2022carnage"
     "opuu2022neurips"
     "opuu2022beta"
-    "opuu2022rafft"))
+    "opuu2022rafft"
+    "opuu2023redesigning"
+    "opuu2023enzyme"))
  '(or :bibtex :latex))
 

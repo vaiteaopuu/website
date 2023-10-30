@@ -68,6 +68,13 @@ Nicolas Panel, Francesco Villa, \underline{Vaitea Opuu}, David Mignon, and
   Substrate binding and catalytic power.
 \newblock {\em PLOS Computational Biology}, 16(1):e1007600, 2020.
 
+\bibitem{opuu2023redesigning}
+\underline{Vaitea Opuu}*, Giuliano* Nigro, Christine Lazennec-Schurdevin, Yves
+  Mechulam, Emmanuelle Schmitt, and Thomas Simonson.
+\newblock Redesigning methionyl-trna synthetase for $\beta$-methionine activity
+  with adaptive landscape flattening and experiments.
+\newblock {\em Protein Science}, 32(9):e4738, 2023.
+
 \bibitem{opuu17_comput_desig_fully_overl_codin}
 \underline{Vaitea Opuu}, Martin Silvert, and Thomas Simonson.
 \newblock Computational design of fully overlapping coding schemes for protein
@@ -80,6 +87,11 @@ Nicolas Panel, Francesco Villa, \underline{Vaitea Opuu}, David Mignon, and
   pairs and triplets.
 \newblock {\em (proceeding of) advances in systems and synthetic biology},
   page~97, 2018.
+
+\bibitem{opuu2023enzyme}
+\underline{Vaitea Opuu} and Thomas Simonson.
+\newblock Enzyme redesign and genetic code expansion.
+\newblock {\em Protein Engineering, Design and Selection}, page gzad017, 2023.
 
 \bibitem{opuu2019physics}
 \underline{Vaitea Opuu}*, Young~Joo Sun*, Titus Hou, Nicolas Panel, Ernesto~J.
