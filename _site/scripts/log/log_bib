@@ -1,0 +1,4 @@
+  File "/home/vopuu/project/LBiophyEvo.github.io/scripts/get_bib.py", line 71
+    'entrytype': pub['bib'].get('ENTRYTYPE', 'article')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
