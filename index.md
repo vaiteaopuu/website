@@ -44,7 +44,6 @@ layout: home
     <div class="research-card">
       <div class="gallery-info">
         <a class="research-link" href="{{ project.url | relative_url }}">
-        <img src="{{ project.image }}" alt="{{ project.name }}">
         <img src="{{ project.image }}" alt="{{ project.name }}" class="research-thumbnail">
         <br>
           {{ project.name | escape }}
