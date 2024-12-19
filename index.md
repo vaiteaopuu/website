@@ -19,7 +19,6 @@ layout: home
     </p>
     <strong><a href="https://scholar.google.com/citations?user=QjPCEicAAAAJ&hl=en&oi=ao"><img src="assets/images/img/google-scholar-svgrepo-com.svg" style="max-width: 40px" alt=""/></a></strong>
     <strong><a href="./assets/cv/cv.pdf"><img src="assets/images/cv-file-interface-symbol-svgrepo-com.svg" alt=""/></a></strong>
-    </div>
   </div>
 </div>
 
@@ -32,6 +31,7 @@ layout: home
         <p class="feed-text">{{ post.content }}<br><span class="feed-date">{{ post.date }}</span></p>
       </div>
       {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -39,6 +39,9 @@ layout: home
 <br>
 
 # Research topics
+{% for project in site.projects %}
+<img src="./assets/images/banner/glob.png" alt="{{ project.name }}">
+{% endfor %}
 
 <div class="gallery">
   {% for project in site.projects %}
