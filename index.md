@@ -40,7 +40,7 @@ layout: home
 
 # Research topics
 {% for project in site.projects %}
-<img src="{{ project.image }}" alt="{{ project.name }}" class="lab-thumbnail">
+<img src="{{ project.image }}" alt="{{ project.name }}">
 {% endfor %}
 
 <div class="gallery">
