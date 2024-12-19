@@ -39,11 +39,10 @@ layout: home
 <br>
 
 # Research topics
-<div class="gallery">
-  {% for project in site.projects %}
-        <img src="{{ project.image }}" alt="{{ project.name }}" class="research-thumbnail">
-  {% endfor %}
-</div>
+{% for project in site.projects %}
+<img src="{{ project.image }}" alt="{{ project.name }}" class="research-thumbnail">
+{% endfor %}
+
 <div class="gallery">
   {% for project in site.projects %}
     <div class="research-card">
