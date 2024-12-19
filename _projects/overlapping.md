@@ -2,7 +2,7 @@
 layout: post
 name: One gene can hide another one !
 topic: Overlapping genes
-image: /assets/images/projects/overlapping_reading_frames.png
+image: ./assets/images/projects/overlapping_reading_frames.png
 ---
 There is a natural process by which one gene can hide another gene; these genes
 are called overlapping genes. This is due to two features of the genetic code:

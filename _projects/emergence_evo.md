@@ -2,7 +2,7 @@
 layout: post
 name: Design RNA for the origin of life
 topic: Origin of Life
-image: /assets/images/projects/self_repro.png
+image: ./assets/images/projects/self_repro.png
 ---
 Estimating the plausibility of RNA self-reproduction is central to
 origin-of-life scenarios but self-reproduction has been shown in only a handful

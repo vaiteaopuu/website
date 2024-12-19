@@ -2,7 +2,7 @@
 layout: post
 name: How to design proteins ?
 topic: Protein design
-image: /assets/images/projects/free_nrj_comb.png
+image: ./assets/images/projects/free_nrj_comb.png
 ---
 Don't let the simplicity of this question fool you! Indeed, protein design hides
 multiple fundamental questions - which essentially shows how little we know

@@ -39,10 +39,6 @@ layout: home
 <br>
 
 # Research topics
-{% for project in site.projects %}
-<img src="./assets/images/banner/glob.png" alt="{{ project.name }}">
-{% endfor %}
-
 <div class="gallery">
   {% for project in site.projects %}
     <div class="research-card">
