@@ -41,6 +41,11 @@ layout: home
 # Research topics
 <div class="gallery">
   {% for project in site.projects %}
+        <img src="{{ project.image }}" alt="{{ project.name }}" class="research-thumbnail">
+  {% endfor %}
+</div>
+<div class="gallery">
+  {% for project in site.projects %}
     <div class="research-card">
       <div class="gallery-info">
         <a class="research-link" href="{{ project.url | relative_url }}">
