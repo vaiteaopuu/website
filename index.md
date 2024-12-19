@@ -12,12 +12,12 @@ layout: home
   <div class="main-content">
     <div class="lab-description-box">
     <h1>Vaitea OPUU</h1>
-    <img src="assets/images/vopuu.png" alt="Greetings" class="lab-thumbnail">
+    <img src="assets/images/img/vopuu.png" alt="Greetings" class="lab-thumbnail">
     <p>
     I'm a CNRS researcher (CR) in computational biology working at <a href="https://www.lbe.espci.fr/home/">ESPCI</a>.
     I develop computational methods to engineer proteins and RNAs at the interface between machine learning and physics.
     </p>
-    <strong><a href="https://scholar.google.com/citations?user=QjPCEicAAAAJ&hl=en&oi=ao"><img src="assets/images/google-scholar-svgrepo-com.svg" style="max-width: 40px" alt=""/></a></strong>
+    <strong><a href="https://scholar.google.com/citations?user=QjPCEicAAAAJ&hl=en&oi=ao"><img src="assets/images/img/google-scholar-svgrepo-com.svg" style="max-width: 40px" alt=""/></a></strong>
     <strong><a href="./assets/cv/cv.pdf"><img src="assets/images/cv-file-interface-symbol-svgrepo-com.svg" alt=""/></a></strong>
   </div>
 </div>
