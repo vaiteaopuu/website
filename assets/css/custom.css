@@ -101,7 +101,7 @@ body {
 
 .research-thumbnail {
     width: calc(30%); /* Adjust this percentage to control thumbnail size */
-    height: 100px; /* Maintain aspect ratio */
+    height: calc(10%); /* Maintain aspect ratio */
     object-fit: cover; /* Ensures the image is cropped to fit */
     float: left; /* Floats the image to the top-left corner */
     margin-right: 15px; /* Adds space between the image and text */
