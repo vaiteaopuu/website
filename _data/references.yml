@@ -10,6 +10,7 @@
     and triplets
   type: paper
   year: '2017'
+  link: https://www.nature.com/articles/s41598-017-16221-8
 - authors:
   - David Mignon
   - Karen Druart
@@ -28,6 +29,7 @@
   title: 'Physics-Based Computational Protein Design: An Update'
   type: paper
   year: '2020'
+  link: https://pubs.acs.org/doi/10.1021/acs.jpca.0c07605
 - authors:
   - Vaitea Opuu
   - Giuliano Nigro
@@ -43,6 +45,7 @@
     binding and catalytic power'
   type: paper
   year: '2020'
+  link: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007600
 - authors:
   - Kuang-Yu Chen
   - Jayaprakash Karuppusamy
@@ -66,6 +69,7 @@
     by single-virus RNA sequencing
   type: paper
   year: '2023'
+  link: https://www.pnas.org/doi/10.1073/pnas.2211098120
 - authors:
   - Vaitea Opuu
   - Young Joo Sun
@@ -81,6 +85,7 @@
     domain
   type: paper
   year: '2020'
+  link: https://www.nature.com/articles/s41598-020-67972-w
 - authors:
   - Nika Abdollahi
   - Alexandre Albani
@@ -138,6 +143,7 @@
   title: 'Meet-U: educating through research immersion'
   type: paper
   year: '2018'
+  link: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005992
 - authors:
   - Vaitea Opuu
   - Thomas Simonson
@@ -148,6 +154,7 @@
   title: Enzyme redesign and genetic code expansion
   type: paper
   year: '2023'
+  link: https://academic.oup.com/peds/article-abstract/doi/10.1093/protein/gzad017/7329943?redirectedFrom=fulltext
 - authors:
   - Vaitea Opuu
   - Nono SC Merleau
@@ -161,6 +168,7 @@
     transform'
   type: paper
   year: '2022'
+  link: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010448
 - authors:
   - Nicolas Panel
   - Francesco Villa
@@ -174,6 +182,7 @@
   title: Computational Design of PDZ-Peptide Binding
   type: paper
   year: '2021'
+  link: https://link.springer.com/protocol/10.1007/978-1-0716-1166-1_14
 - authors:
   - Vaitea Opuu
   - Giuliano Nigro
@@ -189,6 +198,7 @@
     \ with adaptive landscape flattening and experiments"
   type: paper
   year: '2023'
+  link: https://onlinelibrary.wiley.com/doi/10.1002/pro.4738
 - authors:
   - Matthew Deyell
   - Vaitea Opuu
@@ -202,6 +212,7 @@
   title: Global regulators enable bacterial adaptation to a phenotypic trade-off
   type: paper
   year: '2024'
+  link: https://www.sciencedirect.com/science/article/pii/S2589004224027482
 - authors:
   - Camille N Lambert
   - Vaitea Opuu
@@ -217,8 +228,9 @@
   id: f22b2df7f7417149175ea73115fcd3d7
   title: Expanding the space of self-reproducing ribozymes using probabilistic generative
     models
-  type: paper
+  type: preprint
   year: '2024'
+  link: https://www.biorxiv.org/content/10.1101/2024.07.31.605758v1
 - authors:
   - Shuhui Wang
   - Alexandre Allauzen
@@ -229,8 +241,9 @@
   entrytype: article
   id: 9d792f346aa651cef3ef8001582fa5e6
   title: A Guide for Active Learning in Synergistic Drug Discovery
-  type: paper
+  type: preprint
   year: '2024'
+  link: https://www.biorxiv.org/content/10.1101/2024.09.13.612819v1
 - authors:
   - Shuhui Wang
   - Alexandre Allauzen
@@ -241,8 +254,9 @@
   entrytype: article
   id: bf6a6fe6765c17acce0be1ad4afffaf9
   title: Hypothesis-driven interpretable neural network for interactions between genes
-  type: paper
+  type: preprint
   year: '2024'
+  link: https://www.biorxiv.org/content/10.1101/2024.04.09.588719v1
 - authors:
   - Vaitea Opuu
   - "H\xE9l\xE8ne Bret"
@@ -251,8 +265,9 @@
   entrytype: article
   id: 4f3a0c04e3cf668cd1e876a298777a6d
   title: Investigating graph neural network for RNA structural embedding
-  type: paper
+  type: conference
   year: '2022'
+  link: https://www.mlsb.io/papers_2022/Investigating_graph_neural_network_for_RNA_structural_embedding.pdf
 - authors:
   - Vaitea Opuu
   - David Mignon
@@ -262,20 +277,6 @@
   entrytype: article
   id: 00a461a7a5017054591fa607e20dce6b
   title: Knowledge-Based Unfolded State Model for Protein Design
-  type: paper
+  type: chapter
   year: '2022'
-- authors:
-  - Ernesto J Fuentes
-  - Young Joo Sun
-  - Matthew Sternke
-  - Vaitea Opuu
-  - Nicholas Panel
-  - Douglas Barrick
-  - Thomas Simonson
-  citation: Biophysical Journal
-  doi: ''
-  entrytype: article
-  id: 0152f0d79e93bf2617d9e2b151200c27
-  title: Biochemical and Structural Characterization of De Novo Designed PDZ Domains
-  type: paper
-  year: '2019'
+  link: https://link.springer.com/protocol/10.1007/978-1-0716-1855-4_19

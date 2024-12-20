@@ -385,3 +385,24 @@ hr.custom-hr {
     border-radius: 8px;
     text-align: justify;
 }
+
+.paper-type-paper {
+    background-color: #e0f7fa;
+    color: #00796b;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.paper-type-conference {
+    background-color: #fff3e0;
+    color: #e65100;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.paper-type-preprint {
+    background-color: #ede7f6;
+    color: #5e35b1;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
