@@ -23,14 +23,11 @@ title: "Publications"
 
     <!-- Journal and year on the third line, with a DOI link if available -->
     <a href="{{ paper.link }}"> {{ paper.citation }} </a>
-    {% if paper.type %}
-      <span class="paper-type-{{ paper.type | downcase }}">
-        {{ paper.type }}
-      </span>
-    {% endif %}
-    {% if paper.year %}
-      ({{ paper.year }})
-    {% endif %}
+  {% if paper.type %}
+    <span class="paper-type-{{ paper.type | downcase }}">
+      {{ paper.type }}
+    </span>
+ {% endif %}
     </p>
   </div>
   {% endfor %}

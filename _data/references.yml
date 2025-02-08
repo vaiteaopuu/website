@@ -1,5 +1,16 @@
 - authors:
   - Vaitea Opuu
+  citation: bioRxiv
+  doi: ''
+  entrytype: article
+  id: 48e8e9751152ee143858371c43b1cb29
+  title: 'Hybrid Generative Model: Bridging Machine Learning and Biophysics to Expand
+    RNA Functional Diversity'
+  type: preprint
+  year: '2025'
+  link: https://www.biorxiv.org/content/10.1101/2025.01.20.633900v1.full
+- authors:
+  - Vaitea Opuu
   - Martin Silvert
   - Thomas Simonson
   citation: Scientific reports
@@ -175,7 +186,7 @@
   - Vaitea Opuu
   - David Mignon
   - Thomas Simonson
-  citation: PDZ Mediated Interactions: Methods and Protocols,
+  citation: 'PDZ Mediated Interactions: Methods and Protocols'
   doi: ''
   entrytype: article
   id: 28b156b6743a6e764c8120fd0f611ab0
@@ -236,14 +247,14 @@
   - Alexandre Allauzen
   - Philippe Nghe
   - Vaitea Opuu
-  citation: bioRxiv
+  citation: Scientific Reports
   doi: ''
   entrytype: article
   id: 9d792f346aa651cef3ef8001582fa5e6
   title: A Guide for Active Learning in Synergistic Drug Discovery
   type: article
   year: '2025'
-  link: https://www.nature.com/articles/s41598-025-85600-3#Ack1
+  link: https://www.nature.com/articles/s41598-025-85600-3
 - authors:
   - Shuhui Wang
   - Alexandre Allauzen
