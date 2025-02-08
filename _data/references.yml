@@ -175,12 +175,12 @@
   - Vaitea Opuu
   - David Mignon
   - Thomas Simonson
-  citation: PLOS Computational Biology
+  citation: PDZ Mediated Interactions: Methods and Protocols,
   doi: ''
   entrytype: article
   id: 28b156b6743a6e764c8120fd0f611ab0
   title: Computational Design of PDZ-Peptide Binding
-  type: paper
+  type: chapter
   year: '2021'
   link: https://link.springer.com/protocol/10.1007/978-1-0716-1166-1_14
 - authors:
@@ -241,9 +241,9 @@
   entrytype: article
   id: 9d792f346aa651cef3ef8001582fa5e6
   title: A Guide for Active Learning in Synergistic Drug Discovery
-  type: preprint
-  year: '2024'
-  link: https://www.biorxiv.org/content/10.1101/2024.09.13.612819v1
+  type: article
+  year: '2025'
+  link: https://www.nature.com/articles/s41598-025-85600-3#Ack1
 - authors:
   - Shuhui Wang
   - Alexandre Allauzen

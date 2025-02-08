@@ -8,7 +8,7 @@ title: "Publications"
 {% assign papers_by_year = site.data.references | group_by: "year" %}
 {% assign papers_by_year_sorted = papers_by_year | sort: "name" | reverse %}
 {% for year_group in papers_by_year_sorted %}
-  <h2>{{ year_group.name }}</h2> <!-- Display the year as a heading -->
+  <h2>{{ year_group.name PDZ Mediated Interactions: Methods and Protocols,}}</h2> <!-- Display the year as a heading -->
   <hr>
   {% for paper in year_group.items %}
   <div class="paper">
