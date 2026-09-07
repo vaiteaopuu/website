@@ -6,10 +6,10 @@ cd /home/vopuu/project/LBiophyEvo.github.io/scripts/
 git pull origin main
 
 
-python get_news.py 2> log/log_news
+# python get_news.py 2> log/log_news
 python get_bib.py 2> log/log_bib
-python get_xls_people.py 2> log/log_people
-python get_xls_lab_meetings.py 2> log/log_meetings
+# python get_xls_people.py 2> log/log_people
+# python get_xls_lab_meetings.py 2> log/log_meetings
 
 cd ../
 
