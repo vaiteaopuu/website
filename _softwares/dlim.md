@@ -1,7 +1,7 @@
 ---
 name: Direct Latent Interpretable Model
 topic: gene interaction
-image: /assets/images/software/dlim.png
+image: ./assets/images/software/dlim.png
 site: https://github.com/LBiophyEvo/D-LIM-model
 ---
 D-LIM (Direct-Latent Interpretable Model) is a neural network that enhances
