@@ -14,7 +14,7 @@ layout: home
     <h1>Vaitea OPUU</h1>
     <img src="assets/images/img/vopuu.png" alt="Greetings" class="lab-thumbnail">
     <p>
-    I'm a CNRS researcher (CR) in computational biology working at <a href="https://www.lbe.espci.fr/home/">ESPCI</a>.
+    I'm a CNRS researcher (CR) in computational biology working at <a href="https://bioc.ip-paris.fr/">École Polytechnique</a>.
     I develop computational methods to engineer proteins and RNAs at the interface between machine learning and physics.
     </p>
     <strong><a href="https://scholar.google.com/citations?user=QjPCEicAAAAJ&hl=en&oi=ao"><img src="assets/images/img/google-scholar-svgrepo-com.svg" style="max-width: 40px" alt=""/></a></strong>
