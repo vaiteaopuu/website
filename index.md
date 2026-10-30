@@ -13,7 +13,7 @@ layout: home
       <img class="vo-photo" src="{{ '/assets/images/img/vopuu.png' | relative_url }}" alt="Portrait of Vaitea Opuu">
       <h1>Vaitea Opuu</h1>
       <p class="vo-role">CNRS researcher, BIOC, <a href="https://bioc.ip-paris.fr/">École Polytechnique</a></p>
-      <p class="vo-lede">I design RNA molecules. My methods combine machine learning and statistical physics to generate sequences that fold and function, and to measure how much information sequence data really holds.</p>
+      <p class="vo-lede">I design RNA molecules. My methods combine machine learning with physics-based models, such as molecular mechanics, to generate sequences that fold and function, and to measure how much information sequence data really holds.</p>
       <p class="vo-links">
         <a href="https://scholar.google.com/citations?user=QjPCEicAAAAJ&hl=en">Google Scholar</a>
         <a href="https://github.com/vaiteaopuu">GitHub</a>
