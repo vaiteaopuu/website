@@ -115,7 +115,7 @@
 
 /* Recent work */
 .vo-work { padding: 2.5rem 0 1rem; }
-.vo-work > h2, .vo-news > h2 { font-size: 1.6rem; font-weight: 500; margin: 0 0 2rem; }
+.vo-work > h2 { font-size: 1.6rem; font-weight: 500; margin: 0 0 2rem; }
 
 .vo-paper {
   display: grid;
@@ -138,14 +138,6 @@
 .vo-summary { margin: 0 0 1rem; max-width: 36em; }
 .vo-paper .vo-links { font-size: 0.9rem; }
 
-/* News */
-.vo-news { padding: 1.5rem 0 2rem; border-top: 1px solid var(--rule); }
-.vo-news ul { list-style: none; margin: 0; padding: 0; }
-.vo-news li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; padding: 0.6rem 0; }
-.vo-news time { font-family: var(--sans); font-size: 0.9rem; color: var(--muted); padding-top: 0.15rem; }
-.vo-news-title { display: block; }
-.vo-news-text { display: block; font-size: 0.95rem; color: var(--muted); }
-
 /* Small screens */
 @media (max-width: 768px) {
   .vo-hero { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 1.5rem; }
@@ -153,5 +145,4 @@
   .vo-lede { font-size: 1.15rem; }
   .vo-paper { grid-template-columns: 1fr; gap: 1.25rem; }
   .vo-paper:nth-of-type(even) .vo-paper-fig { order: 0; }
-  .vo-news li { grid-template-columns: 1fr; gap: 0; }
 }

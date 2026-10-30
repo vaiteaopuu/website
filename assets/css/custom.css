@@ -406,3 +406,10 @@ hr.custom-hr {
     padding: 2px 6px;
     border-radius: 4px;
 }
+
+.paper-type-book-chapter {
+    background-color: #fff3e0;
+    color: #e65100;
+    padding: 2px 6px;
+    border-radius: 4px;
+}

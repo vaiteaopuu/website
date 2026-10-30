@@ -5,7 +5,8 @@ title: "Publications"
 
 # Publications
 
-{% assign papers_by_year = site.data.references | group_by: "year" %}
+{% assign published = site.data.references | where_exp: "p", "p.type != 'preprint'" %}
+{% assign papers_by_year = published | group_by: "year" %}
 {% assign papers_by_year_sorted = papers_by_year | sort: "name" | reverse %}
 {% for year_group in papers_by_year_sorted %}
   <h2>{{ year_group.name }}</h2> <!-- Display the year as a heading -->
@@ -22,9 +23,9 @@ title: "Publications"
     {% endif %}
 
     <!-- Journal and year on the third line, with a DOI link if available -->
-    <a href="{{ paper.link }}"> {{ paper.citation }} </a>
+    <a href="https://doi.org/{{ paper.doi }}"> {{ paper.citation }} </a>
   {% if paper.type %}
-    <span class="paper-type-{{ paper.type | downcase }}">
+    <span class="paper-type-{{ paper.type | downcase | replace: ' ', '-' }}">
       {{ paper.type }}
     </span>
  {% endif %}

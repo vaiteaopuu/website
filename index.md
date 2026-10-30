@@ -43,32 +43,21 @@ layout: home
       </div>
     </article>
     <article class="vo-paper">
-      <a class="vo-paper-fig" href="{{ '/_projects/leff/' | relative_url }}">
+      <a class="vo-paper-fig" href="https://doi.org/10.1371/journal.pcbi.1014778">
         <img src="{{ '/assets/images/software/effective_length_intuition.png' | relative_url }}" alt="An input alignment and a shorter alignment with the same diversity; Leff is the length of the shorter one">
       </a>
       <div>
-        <p class="vo-venue">PLOS Computational Biology, 2026 (accepted)</p>
-        <h3><a href="{{ '/_projects/leff/' | relative_url }}">A spectral framework for measuring diversity in multiple sequence alignments</a></h3>
+        <p class="vo-venue">PLOS Computational Biology, 2026</p>
+        <h3><a href="https://doi.org/10.1371/journal.pcbi.1014778">A spectral framework for measuring diversity in multiple sequence alignments</a></h3>
         <p class="vo-authors"><strong>V. Opuu</strong></p>
         <p class="vo-summary">The effective length L<sub>eff</sub> counts the genuinely independent information in a set of sequences. Natural RNA and protein families turn out far more constrained than their size suggests, and L<sub>eff</sub> anticipates how reliably their structures can be predicted.</p>
         <p class="vo-links">
-          <a href="https://doi.org/10.64898/2026.02.09.704934">Preprint</a>
+          <a href="https://doi.org/10.1371/journal.pcbi.1014778">Paper</a>
           <a href="https://github.com/vaiteaopuu/effective_length">Code</a>
           <a href="{{ '/_projects/leff/' | relative_url }}">Project page</a>
         </p>
       </div>
     </article>
-  </section>
-  <section class="vo-news">
-    <h2>News</h2>
-    <ul>
-      {% for post in site.data.feed_news %}
-      <li>
-        <time datetime="{{ post.date }}">{{ post.date | date: "%-d %b %Y" }}</time>
-        <div><span class="vo-news-title">{{ post.title }}</span><span class="vo-news-text">{{ post.content }}</span></div>
-      </li>
-      {% endfor %}
-    </ul>
   </section>
 </div>
 

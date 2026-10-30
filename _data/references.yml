@@ -3,23 +3,10 @@
   authors:
   - Vaitea Opuu
   year: 2026
-  citation: Accepted in Plos Computational Biology
-  doi: 10.64898/2026.02.09.704934
+  citation: PLoS Computational Biology
+  doi: 10.1371/journal.pcbi.1014778
   entrytype: article
   type: paper
-- id: 9b1649485f73e9fa86cffd793709a3e5
-  title: 'DORA: a dose-response autoencoder for interpretable transcriptome-to-viability
-    prediction'
-  authors:
-  - Shuhui Wang
-  - Alexandre Allauzen
-  - Vaitea Opuu
-  - Philippe Nghe
-  year: 2026
-  citation: bioRxiv (Cold Spring Harbor Laboratory)
-  doi: 10.64898/2026.05.27.728125
-  entrytype: article
-  type: prepritn
 - id: 55cf62d61cace59da63f6ec24a8d273e
   title: 'D-LIM: A neural network for interpretable gene–gene interactions'
   authors:
@@ -78,16 +65,6 @@
   doi: 10.1038/s41467-025-63151-5
   entrytype: article
   type: paper
-- id: 48e8e9751152ee143858371c43b1cb29
-  title: 'Hybrid Generative Model: Bridging Machine Learning and Biophysics to Expand
-    RNA Functional Diversity'
-  authors:
-  - Vaitea Opuu
-  year: 2025
-  citation: bioRxiv (Cold Spring Harbor Laboratory)
-  doi: 10.1101/2025.01.20.633900
-  entrytype: article
-  type: preprint
 - id: c70cccdf6e3d1073d8743ff8408df66d
   title: Global regulators enable bacterial adaptation to a phenotypic trade-off
   authors:
@@ -162,16 +139,6 @@
   doi: 10.1371/journal.pcbi.1010448
   entrytype: article
   type: paper
-- id: 4f3a0c04e3cf668cd1e876a298777a6d
-  title: Investigating graph neural network for RNA structural embedding
-  authors:
-  - Vaitea Opuu
-  - Hélène Bret
-  year: 2022
-  citation: bioRxiv (Cold Spring Harbor Laboratory)
-  doi: 10.1101/2022.12.02.515916
-  entrytype: article
-  type: preprint
 - id: 28b156b6743a6e764c8120fd0f611ab0
   title: Computational Design of PDZ-Peptide Binding
   authors:
