@@ -355,7 +355,6 @@ html {
 }
 
 
-@media (max-width: 768px) {
 
 @media (max-width: 768px) {
     .truncated-img {
@@ -412,4 +411,46 @@ hr.custom-hr {
     color: #e65100;
     padding: 2px 6px;
     border-radius: 4px;
+}
+
+/* Site header ****************************************************************/
+.vo-header {
+    border-bottom: 1px solid #e2e5ea;
+    background: #fdfdfd;
+}
+.vo-header-inner {
+    width: 80%;
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.1rem 0;
+}
+.vo-brand {
+    font-family: "Spectral", Georgia, serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+    color: #1c2330;
+    text-decoration: none;
+}
+.vo-brand:hover { color: #1c2330; text-decoration: none; }
+.vo-nav { display: flex; gap: 1.75rem; }
+.vo-nav a {
+    font-family: "Work Sans", system-ui, sans-serif;
+    font-size: 1rem;
+    color: #5d6675;
+    text-decoration: none;
+    padding: 0.2rem 0;
+    border-bottom: 2px solid transparent;
+}
+.vo-nav a:hover { color: #1c2330; text-decoration: none; }
+.vo-nav a[aria-current="page"] { color: #1c2330; border-bottom-color: #2e6bd1; }
+.vo-brand:focus-visible, .vo-nav a:focus-visible { outline: 2px solid #2e6bd1; outline-offset: 3px; border-radius: 2px; }
+@media (max-width: 768px) {
+    .vo-header-inner { width: auto; padding: 0.9rem 16px; }
+    .vo-brand { font-size: 1.25rem; }
+    .vo-nav { gap: 1.25rem; }
 }
