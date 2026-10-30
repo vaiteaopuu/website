@@ -13,7 +13,6 @@ permalink: /cv/
   <header class="vo-cv-head">
     <h1>Vaitea Opuu</h1>
     <p class="vo-role">CNRS researcher (Chargé de recherche) in computational biology, BIOC, École Polytechnique</p>
-    <p class="vo-cv-intro">I am a computational biologist developing algorithms for protein and RNA engineering, in close interaction with experiments. I started with genetic code expansion, using physics-based approaches to engineer enzymes into artificial catalysts. I then brought these methods to RNA design and combined them with machine learning to address data scarcity. In Philippe Nghe’s team, I began integrating the two: physics provides essential constraints, and machine learning serves as a powerful generative framework.</p>
     <p class="vo-links">
       <a href="mailto:{{ site.email }}">Email</a>
       <a href="https://scholar.google.com/citations?user=QjPCEicAAAAJ&hl=en">Google Scholar</a>
