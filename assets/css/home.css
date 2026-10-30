@@ -154,7 +154,8 @@
 .vo-cv { max-width: 860px; padding: 1rem 0 3rem; }
 .vo-cv-head { padding-bottom: 1.75rem; border-bottom: 1px solid var(--rule); margin-bottom: 0.5rem; }
 .vo-cv-head h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 500; line-height: 1.1; margin: 0 0 0.4rem; }
-.vo-cv-head .vo-role { margin-bottom: 1rem; }
+.vo-cv-head .vo-role { margin-bottom: 1.25rem; }
+.vo-cv-intro { font-size: 1.2rem; line-height: 1.6; max-width: 38em; margin: 0 0 1.25rem; }
 .vo-cv section { padding: 1.5rem 0 0.5rem; }
 .vo-cv h2 { font-size: 1.4rem; font-weight: 500; margin: 0 0 1rem; }
 .vo-cv-list { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 0.6rem 1.5rem; margin: 0; }
@@ -162,13 +163,7 @@
 .vo-cv-list dd { margin: 0; }
 .vo-cv-list strong { font-weight: 600; }
 .vo-cv-note { font-size: 0.95rem; color: var(--muted); }
-.vo-cv-pubs { list-style: none; margin: 0; padding: 0; }
-.vo-cv-pubs li { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 1.5rem; padding: 0.35rem 0; font-size: 1rem; line-height: 1.55; }
-.vo-cv-year { font-family: var(--sans); font-size: 0.9rem; color: var(--muted); padding-top: 0.15rem; }
-.vo-cv-pubs a { color: var(--ink); text-decoration-color: var(--rule); }
-.vo-cv-pubs a:hover { color: var(--nt-c); }
-.vo-cv-pubs strong { font-weight: 600; }
 @media (max-width: 768px) {
-  .vo-cv-list, .vo-cv-pubs li { grid-template-columns: 1fr; gap: 0; }
+  .vo-cv-list { grid-template-columns: 1fr; gap: 0; }
   .vo-cv-list dd { margin-bottom: 0.75rem; }
 }
