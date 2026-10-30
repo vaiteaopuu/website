@@ -107,8 +107,14 @@
 .rs-C { fill: #2e6bd1; }
 .rs-yes { fill: #1c2330; }
 .rs-no { fill: #fff; stroke: #5d6675; stroke-width: 1.5; }
-.rs-box { fill: #fff; stroke: #1c2330; }
-.rs-model-text { font-family: "Work Sans", system-ui, sans-serif; font-size: 13px; font-weight: 500; fill: #1c2330; }
+.rs-box { fill: #fff; stroke: #1c2330; stroke-width: 1.5; }
+.rs-edge { stroke: #b9c0ca; stroke-width: 1; }
+.rs-neuron { fill: #2e6bd1; stroke: #fff; stroke-width: 1.5; }
+.rs-track { fill: #e2e5ea; }
+.rs-bar { fill: #3a9b4a; }
+.rs-tick { stroke: #5d6675; stroke-width: 1.5; }
+.rs-check { fill: none; stroke: #3a9b4a; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.rs-verdict { font-family: "Work Sans", system-ui, sans-serif; font-size: 12px; font-weight: 600; fill: #1c2330; }
 .rs-link { fill: none; stroke: #5d6675; stroke-width: 1.5; stroke-linecap: round; }
 
 /* Recent work */

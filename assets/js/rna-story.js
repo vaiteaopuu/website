@@ -14,7 +14,7 @@
   var CAPS = [
     "An RNA folds by pairing with itself.",
     "Lab tests of our designed ribozymes train an AI model.",
-    "The model designs new sequences that keep the fold."
+    "The model designs new sequences that keep the fold and are more active."
   ];
 
   // Sequences: 9 bp stem, GNRA tetraloop, short tails
@@ -44,11 +44,12 @@
   // Lab data (illustrative): short aligned designs, active (1) or inactive (0)
   var ROWS = ["GGCACUCAGA", "GGCAGUCUGA", "GCCACUCAGA", "GGUACUCGGA", "GGCACUGAGA", "GCCAGUCUGA", "GAUACUCAGU", "GGCAGUCAGA"];
   var ACTIVE = [1, 1, 0, 1, 0, 1, 1, 0];
-  var ROW_X = 262, ROW_Y0 = 100, ROW_DY = 26, MODEL_Y = 358;
+  var ROW_X = 262, ROW_Y0 = 100, ROW_DY = 26, MODEL_X = 350, MODEL_Y = 362;
 
   // Timeline (seconds)
   var T_LEARN = 2.7, T_FLOW = 4.6, T_DESIGN = 6.4, T_FLIP = 7.1, GAP = 0.12;
-  var T_END = T_FLIP + GROUPS.length * GAP + 0.6;
+  var T_GAUGE = T_FLIP + GROUPS.length * GAP + 0.3;
+  var T_END = T_GAUGE + 1.0;
 
   // Easing helpers
   function clamp(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
@@ -122,13 +123,39 @@
   for (i = 0; i < ROWS.length; i++) rows.push(makeRow(i, svg));
   for (i = 0; i < ROWS.length; i++) flows.push(makeRow(i, svg));
 
+  // AI model: a small neural network on a card
   var model = el("g", {}, svg);
-  var box = el("rect", { x: 282, y: 340, width: 124, height: 36, rx: 18, "class": "rs-box" }, model);
-  var mtext = el("text", { x: 344, y: 363, "text-anchor": "middle", "class": "rs-model-text" }, model);
+  el("rect", { x: 290, y: 330, width: 120, height: 64, rx: 14, "class": "rs-box" }, model);
+  var LAYERS = [[318, [344, 356, 368, 380]], [350, [350, 362, 374]], [382, [356, 368]]];
+  var neurons = [];
+  for (var L = 0; L < LAYERS.length - 1; L++) {
+    LAYERS[L][1].forEach(function (y1) {
+      LAYERS[L + 1][1].forEach(function (y2) {
+        el("line", { x1: LAYERS[L][0], y1: y1, x2: LAYERS[L + 1][0], y2: y2, "class": "rs-edge" }, model);
+      });
+    });
+  }
+  LAYERS.forEach(function (layer, L) {
+    layer[1].forEach(function (yy, q) {
+      neurons.push({ c: el("circle", { cx: layer[0], cy: yy, r: 5, "class": "rs-neuron" }, model), layer: L, q: q });
+    });
+  });
+  var mtext = el("text", { x: MODEL_X, y: 412, "text-anchor": "middle", "class": "rs-label" }, model);
   mtext.textContent = "AI model";
-  var link = el("path", { d: "M282,358 C232,358 196,262 152,240", "class": "rs-link" }, svg);
+  var link = el("path", { d: "M290,362 C236,362 198,262 152,240", "class": "rs-link" }, svg);
   var LINK_LEN = link.getTotalLength ? link.getTotalLength() : 200;
   set(link, "stroke-dasharray", LINK_LEN);
+
+  // Activity meter: the designed sequence beats the original
+  var gauge = el("g", {}, svg);
+  var GX = 206, GW = 70, BEFORE = 0.32, AFTER = 0.92;
+  el("text", { x: GX, y: 380, "class": "rs-label" }, gauge).textContent = "activity";
+  el("rect", { x: GX, y: 388, width: GW, height: 6, rx: 3, "class": "rs-track" }, gauge);
+  var gbar = el("rect", { x: GX, y: 388, width: GW * BEFORE, height: 6, rx: 3, "class": "rs-bar" }, gauge);
+  el("line", { x1: GX + GW * BEFORE, y1: 385, x2: GX + GW * BEFORE, y2: 397, "class": "rs-tick" }, gauge);
+  var verdict = el("g", {}, gauge);
+  el("path", { d: "M" + GX + ",409 l3.5,3.5 l6.5,-7", "class": "rs-check" }, verdict);
+  el("text", { x: GX + 15, y: 413, "class": "rs-verdict" }, verdict).textContent = "more active";
 
   function setBase(n, b) {
     if (n.base === b) return;
@@ -176,16 +203,30 @@
       var p = seg(t, T_FLOW + k * 0.11, 0.65);
       if (p <= 0 || p >= 1) { set(f, "opacity", 0); return; }
       var e = easeIn(p), cy = ROW_Y0 + k * ROW_DY + 9, cx = ROW_X + 70;
-      var ty = (MODEL_Y - cy) * e, sc = 1 - 0.6 * e;
-      f.setAttribute("transform", "translate(" + cx + "," + (cy + ty).toFixed(2) + ") scale(" + sc.toFixed(3) + ") translate(" + (-cx) + "," + (-cy) + ")");
+      var tx = (MODEL_X - cx) * e, ty = (MODEL_Y - cy) * e, sc = 1 - 0.75 * e;
+      f.setAttribute("transform", "translate(" + (cx + tx).toFixed(2) + "," + (cy + ty).toFixed(2) + ") scale(" + sc.toFixed(3) + ") translate(" + (-cx) + "," + (-cy) + ")");
       set(f, "opacity", 1 - e);
     });
     set(model, "opacity", seg(t, T_LEARN + 0.9, 0.4));
-    var pulse = t > T_FLOW + 0.3 && t < T_DESIGN ? Math.abs(Math.sin((t - T_FLOW - 0.3) * Math.PI * 1.4)) : 0;
-    set(box, "stroke-width", 1.5 + 2 * pulse);
+    // neurons light up in waves while training, then the output layer fires
+    neurons.forEach(function (n) {
+      var lit = 0;
+      if (t > T_FLOW + 0.2 && t < T_DESIGN + 0.2) {
+        var w = Math.sin((t - T_FLOW) * 7 - n.layer * 1.1 - n.q * 0.4);
+        lit = Math.max(0, w);
+      } else if (t >= T_DESIGN + 0.2) {
+        lit = n.layer === 2 ? 1 - 0.6 * seg(t, T_DESIGN + 0.8, 0.6) : 0;
+      }
+      set(n.c, "fill-opacity", 0.3 + 0.7 * lit);
+    });
 
     // 3. Design: the model's output reaches the hairpin
     set(link, "stroke-dashoffset", LINK_LEN * (1 - io(seg(t, T_DESIGN, 0.65))));
+
+    // activity rises as the redesign completes
+    set(gauge, "opacity", seg(t, T_FLIP - 0.2, 0.4));
+    set(gbar, "width", GW * (BEFORE + (AFTER - BEFORE) * io(seg(t, T_FLIP, T_GAUGE - T_FLIP))));
+    set(verdict, "opacity", seg(t, T_GAUGE, 0.4));
 
     var c = t < T_LEARN ? 0 : t < T_DESIGN ? 1 : 2;
     if (c !== lastCap && cap) {
