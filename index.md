@@ -8,10 +8,6 @@ layout: home
 <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
 
 <div class="vo-home">
-  <figure class="vo-banner">
-    <canvas id="rna-banner" role="img" aria-label="Animation: an RNA sequence appears, folds into a hairpin, and a new sequence is designed for that shape"></canvas>
-    <figcaption><span id="rna-caption" aria-live="off">Every RNA is a string of four letters.</span><button type="button" class="vo-pause" id="rna-pause">Pause</button></figcaption>
-  </figure>
   <section class="vo-hero">
     <div class="vo-intro">
       <img class="vo-photo" src="{{ '/assets/images/img/vopuu.png' | relative_url }}" alt="Portrait of Vaitea Opuu">
@@ -25,6 +21,9 @@ layout: home
         <a href="mailto:{{ site.email }}">Email</a>
       </p>
     </div>
+    <figure class="vo-story" id="rna-story">
+      <figcaption><span id="rna-caption">An RNA folds by pairing with itself.</span><button type="button" class="vo-replay" id="rna-replay" hidden>Replay</button></figcaption>
+    </figure>
   </section>
   <section class="vo-work">
     <h2>Recent selected work</h2>
@@ -59,4 +58,4 @@ layout: home
   </section>
 </div>
 
-<script src="{{ '/assets/js/rna-banner.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/rna-story.js' | relative_url }}" defer></script>

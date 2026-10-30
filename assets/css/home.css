@@ -20,64 +20,27 @@
 
 .vo-home a { color: var(--nt-c); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .vo-home a:hover { color: var(--ink); }
-.vo-home a:focus-visible, .vo-pause:focus-visible { outline: 2px solid var(--nt-c); outline-offset: 3px; border-radius: 2px; }
+.vo-home a:focus-visible, .vo-replay:focus-visible { outline: 2px solid var(--nt-c); outline-offset: 3px; border-radius: 2px; }
 
 .vo-home h1, .vo-home h2, .vo-home h3 { font-family: var(--serif); color: var(--ink); letter-spacing: -0.01em; }
-
-/* Banner animation */
-.vo-banner { margin: 1.5rem 0 0; }
-.vo-banner canvas {
-  display: block;
-  width: 100%;
-  aspect-ratio: 10 / 3;
-  border-radius: 14px;
-  background: #0c1220;
-}
-.vo-banner figcaption {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-  margin-top: 0.6rem;
-  font-family: var(--serif);
-  font-style: italic;
-  color: var(--muted);
-}
-#rna-caption { transition: opacity 0.22s; }
-#rna-caption.swap { opacity: 0; }
-.vo-pause {
-  font-family: var(--sans);
-  font-size: 0.85rem;
-  color: var(--muted);
-  background: none;
-  border: 0;
-  padding: 0.25rem 0;
-  cursor: pointer;
-}
-.vo-pause:hover { color: var(--ink); }
 
 /* Hero */
 .vo-hero {
   display: grid;
-  grid-template-columns: 84px minmax(0, 1fr);
-  gap: 0 1.75rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 460px);
+  gap: 2.5rem;
+  align-items: center;
   padding: 2.25rem 0 2.75rem;
   border-bottom: 1px solid var(--rule);
 }
-.vo-intro { display: contents; }
 
 .vo-photo {
   width: 84px; height: 84px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 20%;
-  grid-row: 1 / span 4;
-  margin-top: 0.4rem;
+  margin-bottom: 1.25rem;
 }
-
-.vo-hero > .vo-intro > * { grid-column: 2; }
-.vo-hero .vo-photo { grid-column: 1; }
 
 .vo-hero h1 {
   font-size: clamp(2.6rem, 6vw, 4rem);
@@ -101,6 +64,56 @@
 }
 
 .vo-links { font-family: var(--sans); font-size: 0.95rem; margin: 0; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+
+/* Story animation: fold, learn, design */
+.vo-story { margin: 0; }
+.vo-story svg { display: block; width: 100%; height: auto; overflow: visible; }
+.vo-story figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  min-height: 2.6em;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+#rna-caption { transition: opacity 0.2s; }
+#rna-caption.swap { opacity: 0; }
+.vo-replay {
+  flex: none;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+.vo-replay:hover { color: var(--ink); }
+
+.rs-backbone { fill: none; stroke: #b9c0ca; stroke-width: 2.5; stroke-linecap: round; }
+.rs-bp { stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 22; stroke-dashoffset: 22; opacity: 0.55; }
+.rs-nt { opacity: 0; transform-box: fill-box; transform-origin: center; }
+.rs-nt text { font-family: var(--sans); font-size: 12px; font-weight: 600; fill: #fff; }
+.rs-ring { fill: none; stroke: var(--ink); stroke-width: 1.5; opacity: 0; }
+.rs-end, .rs-label { font-family: var(--sans); font-size: 12px; fill: var(--muted); }
+.rs-end { font-size: 13px; }
+.rs-label { opacity: 0; }
+.rs-A { fill: var(--nt-a); }
+.rs-U { fill: var(--nt-u); }
+.rs-G { fill: var(--nt-g); }
+.rs-C { fill: var(--nt-c); }
+.rs-nt .rs-G + text { fill: #3a2900; }
+.rs-row { opacity: 0; transform-box: fill-box; transform-origin: center; }
+.rs-yes { fill: var(--ink); }
+.rs-no { fill: #fff; stroke: var(--muted); stroke-width: 1.5; }
+.rs-model { opacity: 0; }
+.rs-model rect { fill: #fff; stroke: var(--ink); stroke-width: 1.5; }
+.rs-model text { font-family: var(--sans); font-size: 13px; font-weight: 500; fill: var(--ink); }
+.rs-link { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-linecap: round; }
 
 /* Recent work */
 .vo-work { padding: 2.5rem 0 1rem; }
@@ -129,8 +142,7 @@
 
 /* Small screens */
 @media (max-width: 768px) {
-  .vo-hero { grid-template-columns: 56px minmax(0, 1fr); gap: 0 1rem; padding-top: 1.5rem; }
-  .vo-photo { width: 56px; height: 56px; }
+  .vo-hero { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 1.5rem; }
   .vo-lede { font-size: 1.15rem; }
   .vo-paper { grid-template-columns: 1fr; gap: 1.25rem; }
   .vo-paper:nth-of-type(even) .vo-paper-fig { order: 0; }
