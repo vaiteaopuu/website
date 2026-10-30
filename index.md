@@ -5,7 +5,7 @@ layout: home
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <div class="vo-home">
   <section class="vo-hero">
@@ -58,4 +58,4 @@ layout: home
   </section>
 </div>
 
-<script src="{{ '/assets/js/rna-story.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/rna-story.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
