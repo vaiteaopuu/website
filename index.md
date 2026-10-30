@@ -8,6 +8,10 @@ layout: home
 <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
 
 <div class="vo-home">
+  <figure class="vo-banner">
+    <canvas id="rna-banner" role="img" aria-label="Animation: an RNA sequence appears, folds into a hairpin, and a new sequence is designed for that shape"></canvas>
+    <figcaption><span id="rna-caption" aria-live="off">Every RNA is a string of four letters.</span><button type="button" class="vo-pause" id="rna-pause">Pause</button></figcaption>
+  </figure>
   <section class="vo-hero">
     <div class="vo-intro">
       <img class="vo-photo" src="{{ '/assets/images/img/vopuu.png' | relative_url }}" alt="Portrait of Vaitea Opuu">
@@ -21,12 +25,9 @@ layout: home
         <a href="mailto:{{ site.email }}">Email</a>
       </p>
     </div>
-    <figure class="vo-fold" id="rna-fold">
-      <button type="button" class="vo-replay" id="rna-replay">Fold again</button>
-    </figure>
   </section>
   <section class="vo-work">
-    <h2>Recent work</h2>
+    <h2>Recent selected work</h2>
     <article class="vo-paper">
       <a class="vo-paper-fig" href="https://doi.org/10.1038/s41467-025-63151-5">
         <img src="{{ '/assets/images/projects/self_repro.png' | relative_url }}" alt="Self-reproduction kinetics of natural and generated ribozymes">
@@ -38,7 +39,6 @@ layout: home
         <p class="vo-summary">Generative models designed ribozymes that stay active up to 65 mutations away from the natural sequence and still copy themselves. Scaling up from the experimental success rate, at least 10<sup>39</sup> such self-reproducing ribozymes may exist.</p>
         <p class="vo-links">
           <a href="https://doi.org/10.1038/s41467-025-63151-5">Paper</a>
-          <a href="{{ '/_projects/emergence_evo/' | relative_url }}">Project page</a>
         </p>
       </div>
     </article>
@@ -53,12 +53,10 @@ layout: home
         <p class="vo-summary">The effective length L<sub>eff</sub> counts the genuinely independent information in a set of sequences. Natural RNA and protein families turn out far more constrained than their size suggests, and L<sub>eff</sub> anticipates how reliably their structures can be predicted.</p>
         <p class="vo-links">
           <a href="https://doi.org/10.1371/journal.pcbi.1014778">Paper</a>
-          <a href="https://github.com/vaiteaopuu/effective_length">Code</a>
-          <a href="{{ '/_projects/leff/' | relative_url }}">Project page</a>
         </p>
       </div>
     </article>
   </section>
 </div>
 
-<script src="{{ '/assets/js/rna-fold.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/rna-banner.js' | relative_url }}" defer></script>

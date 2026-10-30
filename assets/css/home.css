@@ -20,27 +20,64 @@
 
 .vo-home a { color: var(--nt-c); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .vo-home a:hover { color: var(--ink); }
-.vo-home a:focus-visible, .vo-replay:focus-visible { outline: 2px solid var(--nt-c); outline-offset: 3px; border-radius: 2px; }
+.vo-home a:focus-visible, .vo-pause:focus-visible { outline: 2px solid var(--nt-c); outline-offset: 3px; border-radius: 2px; }
 
 .vo-home h1, .vo-home h2, .vo-home h3 { font-family: var(--serif); color: var(--ink); letter-spacing: -0.01em; }
+
+/* Banner animation */
+.vo-banner { margin: 1.5rem 0 0; }
+.vo-banner canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 10 / 3;
+  border-radius: 14px;
+  background: #0c1220;
+}
+.vo-banner figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--muted);
+}
+#rna-caption { transition: opacity 0.22s; }
+#rna-caption.swap { opacity: 0; }
+.vo-pause {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+.vo-pause:hover { color: var(--ink); }
 
 /* Hero */
 .vo-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
-  gap: 3rem;
-  align-items: center;
-  padding: 2.5rem 0 3rem;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 0 1.75rem;
+  align-items: start;
+  padding: 2.25rem 0 2.75rem;
   border-bottom: 1px solid var(--rule);
 }
+.vo-intro { display: contents; }
 
 .vo-photo {
   width: 84px; height: 84px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 20%;
-  margin-bottom: 1.25rem;
+  grid-row: 1 / span 4;
+  margin-top: 0.4rem;
 }
+
+.vo-hero > .vo-intro > * { grid-column: 2; }
+.vo-hero .vo-photo { grid-column: 1; }
 
 .vo-hero h1 {
   font-size: clamp(2.6rem, 6vw, 4rem);
@@ -64,54 +101,6 @@
 }
 
 .vo-links { font-family: var(--sans); font-size: 0.95rem; margin: 0; display: flex; gap: 1.5rem; flex-wrap: wrap; }
-
-/* Folding hairpin */
-.vo-fold { margin: 0; text-align: center; }
-.vo-fold svg { display: block; width: 100%; max-width: 260px; height: auto; margin: 0 auto; overflow: visible; }
-
-.rna-backbone {
-  fill: none;
-  stroke: #b9c0ca;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  stroke-dasharray: var(--len, 1000);
-  stroke-dashoffset: var(--len, 1000);
-}
-.bp { stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 26; stroke-dashoffset: 26; opacity: 0.55; }
-.nt-body { opacity: 0; transform: scale(0.3); transform-box: fill-box; transform-origin: center; }
-.nt text { font-family: var(--sans); font-size: 12px; font-weight: 600; fill: #fff; }
-.nt-A circle { fill: var(--nt-a); }
-.nt-U circle { fill: var(--nt-u); }
-.nt-G circle { fill: var(--nt-g); }
-.nt-G text { fill: #3a2900; }
-.nt-C circle { fill: var(--nt-c); }
-.rna-end { font-family: var(--sans); font-size: 13px; fill: var(--muted); }
-
-.play .rna-backbone { animation: vo-draw 1.6s linear forwards; }
-.play .nt-body { animation: vo-pop 0.45s cubic-bezier(.2, .9, .3, 1.35) forwards; animation-delay: var(--d); }
-.play .bp { animation: vo-draw 0.3s ease-out forwards; animation-delay: var(--d); }
-
-@keyframes vo-draw { to { stroke-dashoffset: 0; } }
-@keyframes vo-pop { to { opacity: 1; transform: scale(1); } }
-
-.vo-replay {
-  font-family: var(--sans);
-  font-size: 0.85rem;
-  color: var(--muted);
-  background: none;
-  border: 0;
-  padding: 0.25rem 0.5rem;
-  margin-top: 0.5rem;
-  cursor: pointer;
-}
-.vo-replay:hover { color: var(--ink); }
-
-@media (prefers-reduced-motion: reduce) {
-  .rna-backbone, .bp { stroke-dashoffset: 0; }
-  .nt-body { opacity: 1; transform: none; }
-  .play .rna-backbone, .play .nt-body, .play .bp { animation: none; }
-  .vo-replay { display: none; }
-}
 
 /* Recent work */
 .vo-work { padding: 2.5rem 0 1rem; }
@@ -140,8 +129,8 @@
 
 /* Small screens */
 @media (max-width: 768px) {
-  .vo-hero { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 1.5rem; }
-  .vo-fold svg { max-width: 150px; }
+  .vo-hero { grid-template-columns: 56px minmax(0, 1fr); gap: 0 1rem; padding-top: 1.5rem; }
+  .vo-photo { width: 56px; height: 56px; }
   .vo-lede { font-size: 1.15rem; }
   .vo-paper { grid-template-columns: 1fr; gap: 1.25rem; }
   .vo-paper:nth-of-type(even) .vo-paper-fig { order: 0; }
