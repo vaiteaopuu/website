@@ -151,7 +151,7 @@
 }
 
 /* CV page ********************************************************************/
-.vo-cv { max-width: 860px; padding: 1rem 0 3rem; }
+.vo-cv { max-width: 860px; margin: 0; padding: 1rem 0 3rem; }
 .vo-cv-head { padding-bottom: 1.75rem; border-bottom: 1px solid var(--rule); margin-bottom: 0.5rem; }
 .vo-cv-head h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 500; line-height: 1.1; margin: 0 0 0.4rem; }
 .vo-cv-head .vo-role { margin-bottom: 1.25rem; }
