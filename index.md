@@ -17,7 +17,7 @@ layout: home
       <p class="vo-links">
         <a href="https://scholar.google.com/citations?user=QjPCEicAAAAJ&hl=en">Google Scholar</a>
         <a href="https://github.com/vaiteaopuu">GitHub</a>
-        <a href="{{ '/assets/cv/cv.pdf' | relative_url }}">CV</a>
+        <a href="{{ '/cv/' | relative_url }}">CV</a>
         <a href="mailto:{{ site.email }}">Email</a>
       </p>
     </div>

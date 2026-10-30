@@ -45,6 +45,7 @@ header_pages:
   - index.md
   - publications.md
   - software.md
+  - cv.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
