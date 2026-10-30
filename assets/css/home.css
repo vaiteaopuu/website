@@ -1,0 +1,157 @@
+/* Homepage (RNA design focus) ***********************************************/
+
+.vo-home {
+  --ink: #1c2330;
+  --muted: #5d6675;
+  --rule: #e2e5ea;
+  --nt-a: #3a9b4a;
+  --nt-u: #d2463f;
+  --nt-g: #e2a21b;
+  --nt-c: #2e6bd1;
+  --serif: "Spectral", Georgia, serif;
+  --sans: "Work Sans", system-ui, sans-serif;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.vo-home a { color: var(--nt-c); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.vo-home a:hover { color: var(--ink); }
+.vo-home a:focus-visible, .vo-replay:focus-visible { outline: 2px solid var(--nt-c); outline-offset: 3px; border-radius: 2px; }
+
+.vo-home h1, .vo-home h2, .vo-home h3 { font-family: var(--serif); color: var(--ink); letter-spacing: -0.01em; }
+
+/* Hero */
+.vo-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 3rem;
+  align-items: center;
+  padding: 2.5rem 0 3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.vo-photo {
+  width: 84px; height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  margin-bottom: 1.25rem;
+}
+
+.vo-hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  font-weight: 500;
+  line-height: 1.05;
+  margin: 0 0 0.5rem;
+}
+
+.vo-role {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.vo-lede {
+  font-size: 1.3rem;
+  line-height: 1.55;
+  max-width: 34em;
+  margin: 0 0 1.75rem;
+}
+
+.vo-links { font-family: var(--sans); font-size: 0.95rem; margin: 0; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+
+/* Folding hairpin */
+.vo-fold { margin: 0; text-align: center; }
+.vo-fold svg { display: block; width: 100%; max-width: 260px; height: auto; margin: 0 auto; overflow: visible; }
+
+.rna-backbone {
+  fill: none;
+  stroke: #b9c0ca;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: var(--len, 1000);
+  stroke-dashoffset: var(--len, 1000);
+}
+.bp { stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 26; stroke-dashoffset: 26; opacity: 0.55; }
+.nt-body { opacity: 0; transform: scale(0.3); transform-box: fill-box; transform-origin: center; }
+.nt text { font-family: var(--sans); font-size: 12px; font-weight: 600; fill: #fff; }
+.nt-A circle { fill: var(--nt-a); }
+.nt-U circle { fill: var(--nt-u); }
+.nt-G circle { fill: var(--nt-g); }
+.nt-G text { fill: #3a2900; }
+.nt-C circle { fill: var(--nt-c); }
+.rna-end { font-family: var(--sans); font-size: 13px; fill: var(--muted); }
+
+.play .rna-backbone { animation: vo-draw 1.6s linear forwards; }
+.play .nt-body { animation: vo-pop 0.45s cubic-bezier(.2, .9, .3, 1.35) forwards; animation-delay: var(--d); }
+.play .bp { animation: vo-draw 0.3s ease-out forwards; animation-delay: var(--d); }
+
+@keyframes vo-draw { to { stroke-dashoffset: 0; } }
+@keyframes vo-pop { to { opacity: 1; transform: scale(1); } }
+
+.vo-replay {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.vo-replay:hover { color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  .rna-backbone, .bp { stroke-dashoffset: 0; }
+  .nt-body { opacity: 1; transform: none; }
+  .play .rna-backbone, .play .nt-body, .play .bp { animation: none; }
+  .vo-replay { display: none; }
+}
+
+/* Recent work */
+.vo-work { padding: 2.5rem 0 1rem; }
+.vo-work > h2, .vo-news > h2 { font-size: 1.6rem; font-weight: 500; margin: 0 0 2rem; }
+
+.vo-paper {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+.vo-paper:nth-of-type(even) .vo-paper-fig { order: 2; }
+
+.vo-paper-fig { display: block; }
+.vo-paper-fig img { display: block; width: 100%; height: auto; max-height: 320px; object-fit: contain; }
+
+.vo-venue { font-family: var(--sans); font-size: 0.9rem; color: var(--muted); margin: 0 0 0.4rem; }
+.vo-paper h3 { font-size: 1.5rem; font-weight: 500; line-height: 1.25; margin: 0 0 0.6rem; }
+.vo-paper h3 a { color: var(--ink); text-decoration: none; }
+.vo-paper h3 a:hover { color: var(--nt-c); }
+.vo-authors { font-size: 0.95rem; color: var(--muted); margin: 0 0 0.9rem; }
+.vo-authors strong { color: var(--ink); font-weight: 600; }
+.vo-summary { margin: 0 0 1rem; max-width: 36em; }
+.vo-paper .vo-links { font-size: 0.9rem; }
+
+/* News */
+.vo-news { padding: 1.5rem 0 2rem; border-top: 1px solid var(--rule); }
+.vo-news ul { list-style: none; margin: 0; padding: 0; }
+.vo-news li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; padding: 0.6rem 0; }
+.vo-news time { font-family: var(--sans); font-size: 0.9rem; color: var(--muted); padding-top: 0.15rem; }
+.vo-news-title { display: block; }
+.vo-news-text { display: block; font-size: 0.95rem; color: var(--muted); }
+
+/* Small screens */
+@media (max-width: 768px) {
+  .vo-hero { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 1.5rem; }
+  .vo-fold svg { max-width: 150px; }
+  .vo-lede { font-size: 1.15rem; }
+  .vo-paper { grid-template-columns: 1fr; gap: 1.25rem; }
+  .vo-paper:nth-of-type(even) .vo-paper-fig { order: 0; }
+  .vo-news li { grid-template-columns: 1fr; gap: 0; }
+}
