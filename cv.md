@@ -12,8 +12,8 @@ permalink: /cv/
 <div class="vo-home vo-cv">
   <header class="vo-cv-head">
     <h1>Vaitea Opuu</h1>
-    <p class="vo-role">CNRS researcher (Chargé de recherche) in computational biology</p>
-    <p class="vo-cv-intro">I am a computational biologist developing algorithms for protein and RNA engineering, in close interaction with experiments. I started with genetic code expansion, using physics-based approaches to engineer enzymes into artificial catalysts. I then brought these methods to RNA design and combined them with machine learning to address data scarcity. In Philippe Nghe’s team, I integrate the two: physics provides essential constraints, and machine learning serves as a powerful generative framework.</p>
+    <p class="vo-role">CNRS researcher (Chargé de recherche) in computational biology, BIOC, École Polytechnique</p>
+    <p class="vo-cv-intro">I am a computational biologist developing algorithms for protein and RNA engineering, in close interaction with experiments. I started with genetic code expansion, using physics-based approaches to engineer enzymes into artificial catalysts. I then brought these methods to RNA design and combined them with machine learning to address data scarcity. In Philippe Nghe’s team, I began integrating the two: physics provides essential constraints, and machine learning serves as a powerful generative framework.</p>
     <p class="vo-links">
       <a href="mailto:{{ site.email }}">Email</a>
       <a href="https://scholar.google.com/citations?user=QjPCEicAAAAJ&hl=en">Google Scholar</a>
@@ -25,7 +25,7 @@ permalink: /cv/
     <h2>Research positions</h2>
     <dl class="vo-cv-list">
       <dt>2024 to present</dt>
-      <dd><strong>CNRS researcher (Chargé de recherche)</strong>, Paris, France<br><span class="vo-cv-note">Ranked 2nd of about 100 applicants</span></dd>
+      <dd><strong>CNRS researcher (Chargé de recherche)</strong>, Laboratoire de Biologie Structurale de la Cellule (<a href="https://bioc.ip-paris.fr/">BIOC</a>), École Polytechnique, Palaiseau, France<br><span class="vo-cv-note">Ranked 2nd of about 100 applicants</span></dd>
       <dt>2022 to 2024</dt>
       <dd><strong>Postdoc in AI applied to RNA</strong>, ESPCI, Paris, France. Advisor: Philippe Nghe</dd>
       <dt>2020 to 2022</dt>
